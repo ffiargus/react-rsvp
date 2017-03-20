@@ -20,6 +20,7 @@
   },
   "rules": {
     "key-spacing"                : 0,
+    "semi"                       : ["error", "always", { "omitLastInOneLineBlock": true}],
     "space-before-function-paren": 0,
     "no-unused-vars"             : 0,
     "no-undef"                   : 0,
