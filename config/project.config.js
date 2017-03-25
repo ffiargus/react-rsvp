@@ -82,9 +82,6 @@ config.globals = {
   '__DEV__'                : config.env === 'development',
   '__PROD__'               : config.env === 'production',
   '__TEST__'               : config.env === 'test',
-  '__API__'                : config.env === 'production' ? '"https://prophesy-server.herokuapp.com"' : '"http://localhost:8080"',
-  '__GOOGLE_CLIENT_ID__'   : config.env === 'production' ? '"794395704308-585204belgc4l7297ushi82nhcfgq94k.apps.googleusercontent.com"' : '"794395704308-jdgp1c6mns2jhjvt2tv3bi2td66fcrbv.apps.googleusercontent.com"',
-  '__FACEBOOK_CLIENT_ID__' : config.env === 'production' ? '"1448132272178674"' : '"1708757926082257"',
   '__COVERAGE__'           : !argv.watch && config.env === 'test',
   '__BASENAME__'           : JSON.stringify(process.env.BASENAME || '')
 };
